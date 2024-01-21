@@ -14,6 +14,11 @@ a {
     cursor: pointer;
 }
 
+.container {
+    display: flex;
+    width: 50%;
+
+}
 /* working in header */
 
 
@@ -22,10 +27,6 @@ a {
     display: flex;
     background-color: #1A1E1F;
     justify-content: center;
-}
-.container {
-    display: flex;
-    width: 50%;
 }
 .header_main {
     display: flex;
@@ -111,7 +112,7 @@ li{
     flex-direction: column;
     font-size: 1.7rem;
     color: white;
-    padding: 7% 0;
+    padding: 9% 0;
 }
 .info a {
     margin-top: 4%;
@@ -124,7 +125,68 @@ li{
 }
 
 /* section cards styling */
+.cards {
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+}
+.card_title_wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5.5%;
+}
+.title_wrapper
+{
+    margin-bottom: 7%;
+}
+.title_wrapper span {
+    font-size: 1.5rem;
+    color: white;
+}
+.cards_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
+}
+.gen_card
+{
+    border: 1px solid #555555;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+
+}
+.card-content
+{
+    padding-left: 6%;
+}
+.card_info
+{
+    margin-bottom: 40%;
+}
+.card_info h2 {
+    color: white;
+    margin-top: 15%;
+    margin-bottom:10%;
+    font-size: 18px;
+}
+.card_info p{
+    font-size: 14px;
+    color: white;
+}
+.course_det
+{
+    margin-bottom: 7%;
+}
+.course_det a{
+    font-size: 18px;
+    transition: color 0.2s ease;
+    color: var(--secondery-color);
+}
+.course_det a:hover{
+    color: #057199;
+}
 
 
 
