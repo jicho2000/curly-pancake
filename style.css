@@ -1,6 +1,7 @@
 :root {
     --primery-color :#161616;
-    --secondery-color :#0397CF;
+    --secondary-color: #2B2B2B;
+    --links-color :#0397CF;
 }
 body{
     height: 100%;
@@ -102,7 +103,7 @@ li{
 .info_wrapper
 {
     width: 100%;
-    background-color: #2B2B2B;
+    background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +117,7 @@ li{
 }
 .info a {
     margin-top: 4%;
-    color: var(--secondery-color);
+    color: var(--links-color);
     transition: color 0.5s ease;
 }
 .info a:hover 
@@ -128,7 +129,7 @@ li{
 .cards {
     display: flex;
     justify-content: center;
-    background-color: #161616;
+    background-color: var(--primery-color)
 }
 .card_title_wrapper {
     display: flex;
@@ -182,12 +183,47 @@ li{
 .course_det a{
     font-size: 18px;
     transition: color 0.2s ease;
-    color: var(--secondery-color);
+    color: var(--links-color);
 }
 .course_det a:hover{
     color: #057199;
 }
+/*  carousel styliing */
+/* .slider
+{
+    display: flex;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+.slider_wraper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.logo_wrapper
+{
+    width: 100%;
+    height: auto;
+}
+.contant_name span 
+{
+    font-size: 1.5rem;
+    color: white;
+}
+.carousel-container {
+    overflow: hidden;
+    width: 100%; /* Adjust the width as needed */
+    /* margin: auto;
+  } */
+/* .carousel {
+    display: flex;
 
+}
+.slide
+{
+    width: 100%;
+} */ 
 
 
 
