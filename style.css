@@ -17,36 +17,30 @@ a {
 
 .container {
     display: flex;
+    justify-content: space-between;
     width: 50%;
-
+    
 }
 /* working in header */
 
 
- .header
+.header
 {
     display: flex;
-    background-color: #1A1E1F;
     justify-content: center;
-}
-.header_main {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    background-color: #1A1E1F;
 }
 .logo_wrapper {
     padding-top: 2%;
 }
-.nav-bar{
-    flex-direction: column;
+.nav__bar{
     margin-top: 3px;
 }
- .nav-bar ul {
+ .nav__bar ul {
     display: flex;
     list-style: none;
-    padding: 0;
 }
-.nav-bar p {
+.nav__bar p {
     text-align: right;
     line-height: 26px;
     font-size: 15px;
@@ -54,49 +48,45 @@ a {
     color: rgb(244,244,244);   
     transition: color 0.3s ease;
 }
+.nav__bar .active p {
+    color: var(--links-color);
+}
 li{
     padding: 0 15px;
 }
-.nav-bar p:hover {
+.nav__bar p:hover {
     color: #0B79A3;
 }
-/* main section  */
 
-
- .main 
-{
-    width: 100%;
-    height: auto;
-}
 
 /*  img section styling */
 
-
-.image_wraper
-{
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-}
-.image_wraper .img  {
+.img  {
     background-image: url('./assets/dasd.png');
     background-size: cover;
     color: #fff;
-    text-align: center;
     height: 352px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  .inside_text_wrapper
-  {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-
-
+    }
+.inside_text_wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start; 
+    }
+.text1
+    {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: -10px;
+    }
+.text2
+{
+    color: white;
+    font-size: 34px;
+}
   /* info section styling */
 
 
@@ -106,17 +96,16 @@ li{
     background-color: var(--secondary-color);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .info {
     display: flex;
     flex-direction: column;
     font-size: 1.7rem;
     color: white;
-    padding: 9% 0;
+    padding: 3% 0;
 }
 .info a {
-    margin-top: 4%;
+    margin-top: 2%;
     color: var(--links-color);
     transition: color 0.5s ease;
 }
@@ -140,9 +129,10 @@ li{
 {
     margin-bottom: 7%;
 }
-.title_wrapper span {
+.card_title_wrapper p {
     font-size: 1.5rem;
     color: white;
+    margin-bottom: 6%;
 }
 .cards_wrapper {
     display: flex;
@@ -150,7 +140,7 @@ li{
     flex-wrap: wrap;
 
 }
-.gen_card
+.card
 {
     border: 1px solid #555555;
     margin-bottom: 20px;
@@ -164,28 +154,36 @@ li{
 }
 .card_info
 {
-    margin-bottom: 40%;
+    margin-bottom: 25%;
 }
-.card_info h2 {
+.card_info h5 {
     color: white;
     margin-top: 15%;
-    margin-bottom:10%;
-    font-size: 18px;
+    margin-bottom: 10%;
+    font-size: 17px;
 }
 .card_info p{
     font-size: 14px;
     color: white;
 }
-.course_det
-{
-    margin-bottom: 7%;
+
+.course_det p {
+    margin-right: 10px;
 }
-.course_det a{
+
+.course_det {
+    display: flex;
+    margin-bottom: 7%;
     font-size: 18px;
     transition: color 0.2s ease;
     color: var(--links-color);
 }
-.course_det a:hover{
+.card__link p
+{
+    font-size: 20px;
+    color: var(--links-color);
+}
+.card__link p:hover{
     color: #057199;
 }
 /*  carousel styliing */
