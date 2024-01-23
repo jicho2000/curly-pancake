@@ -1,29 +1,63 @@
-let currentIndex = 0;
+let currentSlide = 1;
 
-function showSlide(index) {
-  const carousel = document.querySelector('.carousel');
-  const slides = document.querySelectorAll('.carousel .slide');
-  const totalSlides = slides.length;
+function showSlide(slideIndex) {
+  const slides = document.querySelectorAll('.slider__logos > div');
+  const dots = document.querySelectorAll('.slider__btn__ol a');
 
-  if (index < 0) {
-    currentIndex = totalSlides - 1;
-  } else if (index >= totalSlides) {
-    currentIndex = 0;
+  if (slideIndex > slides.length) {
+      currentSlide = 1;
+  } else if (slideIndex < 1) {
+      currentSlide = slides.length;
   } else {
-    currentIndex = index;
+      currentSlide = slideIndex;
   }
 
-  const newPosition = -currentIndex * 100 + '%';
-  carousel.style.transform = 'translateX(' + newPosition + ')';
-}
+  slides.forEach((slide, index) => {
+      slide.style.display = index + 1 === currentSlide ? 'flex' : 'none';
+  });
 
-function prevSlide() {
-  showSlide(currentIndex - 1);
+  dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index + 1 === currentSlide);
+  });
 }
 
 function nextSlide() {
-  showSlide(currentIndex + 1);
+    showSlide(currentSlide + 1);
 }
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+}
+
+function goToSlide(index) {
+    showSlide(index);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(currentSlide);
+});
+
+const dotButtons = document.querySelectorAll('.slider__btn__ol a');
+dotButtons.forEach((button, index) => {
+    button.addEventListener('click', (event) => {
+        event.preventDefault();
+        goToSlide(index + 1);
+    });
+});
+
+// Optional: Auto-play carousel
+// Uncomment the line below if you want the carousel to auto-play
+// setInterval(nextSlide, 3000);
+
+
+// Optional: Auto-play carousel
+// Uncomment the line below if you want the carousel to auto-play
+// setInterval(nextSlide, 3000);
+
+// Optional: Auto-play carousel
+// Uncomment the line below if you want the carousel to auto-play
+// setInterval(nextSlide
+
 
 // setInterval(() => {
 //   nextSlide();

@@ -50,7 +50,7 @@ a {
 .nav__bar .active p {
     color: var(--links-color);
 }
-li{
+.nav__bar li{
     padding: 0 15px;
 }
 .nav__bar p:hover {
@@ -117,12 +117,14 @@ li{
 .cards {
     display: flex;
     justify-content: center;
-    background-color: var(--primery-color)
+    background-color: var(--primery-color);
+    margin-bottom: 2;
 }
 .card_title_wrapper {
     display: flex;
     flex-direction: column;
     padding-top: 5.5%;
+    margin-bottom: 3%;
 }
 .title_wrapper
 {
@@ -197,8 +199,7 @@ li{
 .slider_wraper {
     display: flex;
     justify-content: center;
-    margin-top: 1%;
-    margin-bottom: 4%;
+    margin-bottom: 3%;
 }
 .contant_name
 {
@@ -213,40 +214,45 @@ li{
 {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 6%;
+    margin-bottom: 1%;
+
 }
 .slider__logos
 
 {
-    width: 100%;
-}
-.slide1
-{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     width: 100%;
-
-} 
-.logo1, .logo2{
-    width: 250px;
 }
-.logo3__wrapper
+.all__logo__wrapper
 {
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
+.slide3
+{
+    display: flex;
+    justify-content: center;
+
+}
+.slide1
+{
+    display: flex;
+    justify-content: space-between;
+
+} 
 .slide2
 {
+    display: flex;
+    justify-content: space-between;
     display: none;
-    width: 100%;
 }
+
 .slide3
 {
     display: none;
-    width: 100%;
-
 }
 
 .prev__btn {
@@ -277,6 +283,29 @@ li{
 }
 path {
     fill: #ffffff;
+}
+.slider__nav {
+    display: flex;
+    justify-content: center;
+}
+.slider__btn__ol
+{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.slider__btn__ol li 
+{
+    margin-right: 12px;
+}
+.slider__btn__ol a
+{
+    height: 7px;
+    width: 7px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
 }
 
 
