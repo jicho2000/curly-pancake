@@ -28,15 +28,20 @@ hr {
 
 .header
 {
+    width: 100%;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     background-color: #1A1E1F;
+    padding-bottom: 2px;
 }
 .logo_wrapper {
     padding-top: 2%;
 }
 .nav__bar{
-    margin-top: 3px;
+    margin-top: 6px;
 }
  .nav__bar ul {
     display: flex;
@@ -385,6 +390,84 @@ path {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+
+/* footer syling */
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #1A1E1F;
+    padding-top: 4%;
+    padding-bottom: 3%;
+}
+.footer__logos
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.f__logos
+{
+    display: flex;
+    width: 100%;
+}
+.soc__media_logos
+{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.soc__media_logos a{
+    margin-left: 1%;
+}
+.footer__Info
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1%;
+}
+.f__info
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text__info p {
+    color: white;
+    font-size: 1.2rem;
+}
+.text__info p,a {
+    color: white;
+}
+.text__info a {
+    color: white;
+    font-size: 1.1rem;
+}
+.text__us
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text__us a
+{
+    font-size: 1.4rem;
+    padding: 4% 15%;
+    border:none ;
+    color: white;
+    background-color: var(--links-color);
+    border-radius: 8px;
+    transition: color 0.3s ease;
+}
+.text__us a:hover
+{
+    color: black;
+    background-color:#f7f6e8 ;
 }
 /* 
 .banner-container {
