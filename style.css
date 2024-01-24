@@ -20,6 +20,9 @@ a {
     justify-content: space-between;
     width: 50%;
 }
+hr {
+    opacity: 0.1;
+}
 /* working in header */
 
 
@@ -215,7 +218,6 @@ a {
     display: flex;
     justify-content: space-around;
     margin-bottom: 1%;
-
 }
 .slider__logos
 
@@ -229,13 +231,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.slide3
-{
-    display: flex;
-    justify-content: center;
-
+    width: 100%;
+    height: 100%;
 }
 .slide1
 {
@@ -249,12 +246,28 @@ a {
     justify-content: space-between;
     display: none;
 }
+.slide3
+{
+    display: flex;
+    justify-content: center;
+
+}
 
 .slide3
 {
     display: none;
 }
+.first__btn
+{
+    margin-top: 1%;
+    padding-bottom: 4%;
+    
+}
+.second__btn
+{
+    margin-top: 1%;
 
+}
 .prev__btn {
  background-color: var(--secondary-color);
  width: 18px;
@@ -287,6 +300,8 @@ path {
 .slider__nav {
     display: flex;
     justify-content: center;
+    margin-top: -4%;
+    margin-bottom: 3%;
 }
 .slider__btn__ol
 {
@@ -308,7 +323,69 @@ path {
     cursor: pointer;
 }
 
-
+/*  question section styling */
+.questions
+{
+    background-color: var(--primery-color);
+    display: flex;
+    justify-content: center;
+    padding: 4% 0;
+}
+.question__container
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.question__title
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.question__title p 
+{
+    color: white;
+    font-size: 1.3rem;
+}
+.question__title a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--links-color);
+    font-size: 1.4rem;
+}
+.question__title a:hover
+{
+    color: #057199;
+}
+.qeustions__list
+{
+    list-style-type: none;
+    padding: 0;
+    
+}
+.qeustions__list li
+{
+    padding: 1% 0;
+}
+.qeustions__list  p
+{
+    color: white;
+    font-size: 1.2rem;
+}
+.qeustions__list path {
+    margin-top: 100%;
+}
+.qeustions__list button {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
 /* 
 .banner-container {
     position: relative;

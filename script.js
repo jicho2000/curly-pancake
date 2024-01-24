@@ -43,22 +43,11 @@ dotButtons.forEach((button, index) => {
         event.preventDefault();
         goToSlide(index + 1);
     });
-});
-
-// Optional: Auto-play carousel
-// Uncomment the line below if you want the carousel to auto-play
-// setInterval(nextSlide, 3000);
-
-
-// Optional: Auto-play carousel
-// Uncomment the line below if you want the carousel to auto-play
-// setInterval(nextSlide, 3000);
-
-// Optional: Auto-play carousel
-// Uncomment the line below if you want the carousel to auto-play
-// setInterval(nextSlide
+  });
+  
+  setInterval(() => {
+    nextSlide();
+  }, 4000);
 
 
-// setInterval(() => {
-//   nextSlide();
-// }, 3000);
+
