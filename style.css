@@ -299,9 +299,7 @@ hr {
     margin: 4px 2px;
     cursor: pointer;
 }
-path {
-    fill: #ffffff;
-}
+
 .slider__nav {
     display: flex;
     justify-content: center;
@@ -327,7 +325,9 @@ path {
     display: inline-block;
     cursor: pointer;
 }
-
+.logos__wrapper path {
+    fill: #fff;
+}
 /*  question section styling */
 .questions
 {
@@ -341,6 +341,7 @@ path {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding: 0 2%;
 }
 .question__title
 {
@@ -380,9 +381,6 @@ path {
     color: white;
     font-size: 1.2rem;
 }
-.qeustions__list path {
-    margin-top: 100%;
-}
 .qeustions__list button {
     display: flex;
     justify-content: space-between;
@@ -392,7 +390,39 @@ path {
     cursor: pointer;
 }
 
-
+ul path {
+    fill: #fff;
+}
+.answer
+{
+    display: none;
+}
+/* .answer2 
+{
+    display: none;
+}
+.answer2 p {
+    padding-left: 1%;
+    line-height: 1.5;
+    font-size: 16px;
+} */
+.answer p:nth-child(1)
+{
+    font-size: 14px;
+}
+.answer p:nth-child(2)
+{
+    font-size: 16px;
+}
+.answer__P2
+{
+    padding-left: 4% ;
+    line-height: 2;
+}
+.answer__P2 span 
+{
+    font-weight: bold;
+}
 /* footer syling */
 
 footer {
@@ -449,6 +479,7 @@ footer {
 }
 .text__us
 {
+    margin-right: 35px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -456,8 +487,8 @@ footer {
 }
 .text__us a
 {
-    font-size: 1.4rem;
-    padding: 4% 15%;
+    font-size: 1.1rem;
+    padding: 8% 40%;
     border:none ;
     color: white;
     background-color: var(--links-color);
