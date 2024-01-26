@@ -31,17 +31,26 @@ hr {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     top: 0;
-    z-index: 1000;
     background-color: #1A1E1F;
     padding-bottom: 2px;
+}
+.header__Wrapper
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 .logo_wrapper {
     padding-top: 2%;
 }
 .nav__bar{
     margin-top: 6px;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+
 }
  .nav__bar ul {
     display: flex;
@@ -397,15 +406,13 @@ ul path {
 {
     display: none;
 }
-/* .answer2 
-{
-    display: none;
-}
-.answer2 p {
-    padding-left: 1%;
-    line-height: 1.5;
+
+#answer2  p{
     font-size: 16px;
-} */
+}
+#answer3  p{
+    font-size: 16px;
+}
 .answer p:nth-child(1)
 {
     font-size: 14px;
@@ -413,15 +420,6 @@ ul path {
 .answer p:nth-child(2)
 {
     font-size: 16px;
-}
-.answer__P2
-{
-    padding-left: 4% ;
-    line-height: 2;
-}
-.answer__P2 span 
-{
-    font-weight: bold;
 }
 /* footer syling */
 
@@ -500,33 +498,45 @@ footer {
     color: black;
     background-color:#f7f6e8 ;
 }
-/* 
-.banner-container {
-    position: relative;
+
+@media (max-width:1700px)
+{
+    .container 
+    {
+    width: 60%;
+    }
+}
+@media (max-width:1530px)
+{
+    .container 
+    {
+    width: 70%;
+    }
+}
+@media (max-width:1320px)
+{
+    .container 
+    {
+    width: 80%;
+    }
+}
+@media (max-width:1150px)
+{
+    .container 
+    {
+    width: 90%;
+    }
+}
+@media (max-width:1025px)
+{
+    .container 
+    {
     width: 100%;
-    overflow: hidden;
+    }
+    .header {
+    }
+    .header__Wrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }
-
-.banner-image {
-    background-image: url('./assets/dasd.png');
-    background-size: cover;
-    color: #fff;
-    text-align: center;
-    padding: 50px;
-    height: 400px;
-    box-sizing: border-box;
-}
-
-.banner-image h1 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-}
-
-.banner-image p {
-    font-size: 1.2em;
-}
-.contaier {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-} */

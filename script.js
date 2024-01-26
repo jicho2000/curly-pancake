@@ -1,4 +1,6 @@
 // header moving js
+
+
 document.addEventListener("DOMContentLoaded", function () {
     var header = document.querySelector('.header');
     window.addEventListener('scroll', function () {
@@ -10,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
     });
+
+
 // carousel js
 let currentSlide = 1;
 
@@ -61,27 +65,25 @@ setInterval(() => {
     nextSlide();
 }, 4000);
 
+// questions js
+
 
 function toggleAnswer(answerId) {
     var answer = document.getElementById(answerId);
     var arrow = event.currentTarget.querySelector('svg');
 
-    // Check if the answer is currently visible
     var isAnswerVisible = answer.style.display !== 'none' && answer.style.display !== '';
 
-    // Hide all answers
     var allAnswers = document.querySelectorAll('.answer');
     allAnswers.forEach(function (a) {
         a.style.display = 'none';
     });
 
-    // Reset all arrows
     var allArrows = document.querySelectorAll('svg');
     allArrows.forEach(function (a) {
         a.style.transform = 'rotate(0deg)';
     });
 
-    // If the answer is not currently visible, show it with an upward arrow
     if (!isAnswerVisible) {
         answer.style.display = 'block';
         arrow.style.transform = 'rotate(180deg)';
