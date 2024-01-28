@@ -90,14 +90,15 @@ function toggleAnswer(answerId) {
     }
 }
 
+// burger menu
 
 
+const burgerIcon = document.getElementById('burger-icon');
+    const menu = document.getElementById('menu');
 
-
-
-
-
-
+    burgerIcon.addEventListener('click', () => {
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    });
 
 
 
