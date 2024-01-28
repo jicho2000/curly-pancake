@@ -28,4 +28,4 @@ Submit a Pull Request: Describe your changes in the pull request.
 For inquiries or feedback, reach out through GitHub issues at tbcXusaid-project repository.
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+This project is licensed under the MIT License.
