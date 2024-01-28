@@ -160,6 +160,7 @@ hr {
     font-size: 1.5rem;
     color: white;
     margin-bottom: 6%;
+    font-weight: bold;
 }
 
 .cards_wrapper {
@@ -243,6 +244,7 @@ hr {
 .slider__title {
     font-size: 1.5rem;
     color: white;
+    font-weight: bold;
 }
 
 .logos__wrapper {
@@ -378,6 +380,7 @@ hr {
 .question__title p {
     color: white;
     font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .question__title a {
